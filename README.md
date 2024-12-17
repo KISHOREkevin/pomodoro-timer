@@ -2,6 +2,8 @@
 As I had learnt to build stuff by myself , i wanted an pomodoro timer and i dont want to rely on thrid party , hence i created my own basic timer app using:
 * Python
 * GTK library
+* PyGObject
+* Plyer
   
 You can also modify time as your needs....
 
