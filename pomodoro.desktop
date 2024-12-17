@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Pomodoro
+Comment=pomodoro timer
+Exec=pomodoro
+Type=Application
