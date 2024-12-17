@@ -1,6 +1,7 @@
 import gi
 import subprocess
 import time
+import os
 from plyer import notification
 gi.require_version("Gtk","3.0")
 gi.require_version("GLib","2.0")
@@ -57,7 +58,7 @@ class pomodoroWin(Gtk.Window):
         self.timerLabel.set_markup("<span size='70000'>"+str(self.minutes)+":"+str(self.seconds)+"</span>")
         if self.minutes<0:
             self.notify()
-            subprocess.run(["paplay","music/notify.wav"])
+            subprocess.run(["paplay", os.path.join(os.path.expanduser("~"),".local/share/pomodoro/music/notify.wav")])
             self.timerLabel.set_markup("<span size='70000'>Time Ended</span>")
             self.minutes=25
             self.seconds=0
